@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    padding: 0 240px;
+}
+
+.body-content-container {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    /* border: 1px red solid; */
+}
+
+#text-container {
+    width: 50%;
+
+}
+
+#main-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+
+    padding: 120px;
+    
+    /* border: 1px green solid; */
+}
+
+#main-text-wrapper * {
+    width: 100%;
+}
