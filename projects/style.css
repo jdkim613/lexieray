@@ -1,8 +1,36 @@
+* {
+    border: none !important;
+}
+
 body {
     display: flex;
     flex-direction: row;
     height: 100vh;
-    padding: 0 240px;
+    padding: 0 24px;
+}
+
+#audio-container {
+    position: fixed;
+    right: calc(50% - 300px/2);
+    bottom: 48px;
+}
+
+#audio-control-player {
+    background-color: rgba(100%, 100%, 100%, 0.2);
+}
+
+#header-image-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#picofus {
+    width: 80%;
+    min-width: 640px;
+    
+    border: 1px blue solid;
 }
 
 .body-content-container {
@@ -13,13 +41,13 @@ body {
     justify-content: center;
     align-items: center;
 
-    /* border: 1px red solid; */
+    border: 1px red solid;
 }
 
-#text-container {
+/* #text-container {
     width: 50%;
 
-}
+} */
 
 #main-text-wrapper {
     display: flex;
@@ -28,11 +56,84 @@ body {
     justify-content: center;
     height: 100%;
 
-    padding: 120px;
+    padding: 0 25% 0 15%;
     
-    /* border: 1px green solid; */
+    border: 1px green solid;
 }
 
 #main-text-wrapper * {
     width: 100%;
 }
+
+/* Text */
+h1 {
+    font-family: 'Owners';
+    font-style: italic;
+    font-weight: 800;
+    font-size: 36px;
+    line-height: 50px;
+    margin: 0;
+}
+
+h2 {
+    font-family: 'Market Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 67px;
+    margin: 0;
+}
+
+p {
+    font-family: 'FreightText Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.7;
+}
+
+@media screen and (min-width: 801px) and (max-width: 1200px) {
+    #picofus {
+        width: 80%;
+        min-width: 480px;
+        
+        border: 1px blue solid;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    body {
+      flex-direction: column;
+      padding-top: 10%;
+    }
+
+    #main-text-wrapper {
+        padding: 8%;
+        
+    }
+
+    .body-content-container {
+        width: 100%;
+        display: flex;
+        height: fit-content;
+    }
+
+    #picofus {
+        width: 120%;
+        min-width: 360px;
+    }
+
+    h1 {
+        font-size: 32px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+  }
