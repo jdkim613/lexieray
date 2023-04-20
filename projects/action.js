@@ -14,15 +14,11 @@ var song = {
     duration: songDuration
 };
 
-var source = "songs/Oh! What a Shiny Night.mp3"
- var audio = document.createElement("audio");
- //
- audio.autoplay = true;
- //
- audio.load()
- audio.addEventListener("load", function() { 
-     audio.play(); 
- }, true);
- audio.src = source;
+audio = new Audio("/songs/Oh! What a Shiny Night.mp3");
 
-console.log(songName);
+  audio.addEventListener('ended',function(){
+        audio.src = "/songs/12pm.mp3";
+        audio.pause();
+        audio.load();
+        audio.play();
+    });
