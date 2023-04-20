@@ -14,6 +14,9 @@ var song = {
     duration: songDuration
 };
 
+document.getElementById("playing-song").innerHTML = "Oh! What a Shiny Night";
+document.getElementById("playing-song").innerHTML = "Oh! What a Shiny Night";
+
 audio = new Audio("/songs/Oh! What a Shiny Night.mp3");
 
   audio.addEventListener('ended',function(){
